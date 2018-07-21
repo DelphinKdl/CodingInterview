@@ -1,5 +1,6 @@
 public class ReverseString {
-har[] s = orig.toCharArray();
+public String reverseString(String orig) {
+char[] s = orig.toCharArray();
     int n = s.length;
     int halfLength = n / 2;
     for (int i=0; i<halfLength; i++)
