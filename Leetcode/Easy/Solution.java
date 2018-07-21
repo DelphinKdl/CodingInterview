@@ -1,4 +1,4 @@
-import java.util.Set;
+
 class Solution {
     public static void shiftLeft(int [] nums, int index){
         int length = nums.length ; // DP
@@ -29,7 +29,6 @@ class Solution {
         System.out.println();
         String str =  Integer.toString(nums[1]);;
         System.out.println(str);
-        Set x = new Set();
         
     }
 
