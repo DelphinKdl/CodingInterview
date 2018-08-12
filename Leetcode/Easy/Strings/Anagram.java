@@ -1,7 +1,9 @@
 import java.util.Hashtable;
 public class Anagram {
   public boolean isAnagram(String s, String t) {
-      char [] sElements = s.toCharArray(); 
+      char [] sElements = s.toCharArray();
+
+      
        return true;
    }
 public static void main(String [] args){
