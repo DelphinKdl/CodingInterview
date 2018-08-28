@@ -1,24 +1,18 @@
-import java.util.Hashtable;
-import java.util.ArrayList;
+import java.util.Arrays;
+
 class SingleNumber {
-    public int singleNumber(int[] nums) {
-        // Find the single number in an array.
-        return 0 ;
+    public static int singleNumber(int[] nums) {
+
+      int x = 0;
+      for (int a : nums) {
+          x = x ^ a;
+      }
+      return x;
+  
     }
     public static void main (String [] args){
-      SingleNumber s = new SingleNumber();
-      int [] ints  = {4,1,2,1,2};
-      ArrayList s1 = new ArrayList();
-      Hashtable <Integer, ArrayList<Integer>> table = new Hashtable <Integer, ArrayList<Integer>>();
-      for (int i =  0; i < 5 ; i ++){
-        if (table.contains(i) == false){
-          s1.add(ints[i]);
-          table.put(i, s1);
-        }
-      }
-      // Does not make sense.
-
-      // I will fix the error.
-      System.out.println(table.get(5));
+        int [] x = {2,2,1,1,3};
+        int x2 = SingleNumber.singleNumber(x);
+        System.out.println(x2);
     }
 }
